@@ -10,6 +10,10 @@ The extension show the ping and if network with internet is available.
 
 ## Versions
 
+### 0.0.3
+
+Make a rounded MS number.
+
 ### 0.0.2
 
 Fix preview image

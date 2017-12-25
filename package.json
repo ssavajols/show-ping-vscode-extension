@@ -2,7 +2,7 @@
     "name": "ping",
     "displayName": "show ping",
     "description": "",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "savajols",
     "engines": {
         "vscode": "^1.19.0"

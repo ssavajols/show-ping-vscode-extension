@@ -4,7 +4,7 @@ import { spawn } from 'child_process';
 export class Ping {
 
   private statusBar: StatusBarItem;
-  private _ms: string;
+  private _ms: number;
   private _status: string;
 
   private _onlineText = `$(radio-tower) ONLINE`;
@@ -37,7 +37,7 @@ export class Ping {
     return this._status;
   }
 
-  getMs(): string {
+  getMs(): number {
     return this._ms;
   }
 
@@ -45,7 +45,7 @@ export class Ping {
     this._status = online ? this._onlineText : this._offlineText ;
   }
 
-  setMs(ms: string): void {
+  setMs(ms: number): void {
     this._ms = ms;
   }
 
@@ -63,9 +63,14 @@ export class Ping {
       });
   }
 
-  parseMs(pingCommandResult: string): string {
+  parseMs(pingCommandResult: string): number {
       const parsed = pingCommandResult.match(/time=(.*)ms/);
-      return parsed ? parsed[1] : null;
+
+      if ( parsed ) {
+        return parseInt(parsed[1], 10);
+      } else {
+        return null;
+      }
   }
 
   show() {
