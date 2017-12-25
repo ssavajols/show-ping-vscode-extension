@@ -2,7 +2,7 @@
 
 This extension show ping in the status bar and show if you are online or offline.
 
-![Ping Preview](https://github.com/ssavajols/show-ping-vscode-extension/raw/master/src/ping-video.gif)
+![Ping Preview](https://github.com/ssavajols/show-ping-vscode-extension/raw/master/ping-video.gif)
 
 ## Features
 
