@@ -10,6 +10,10 @@ The extension show the ping and if network with internet is available.
 
 ## Versions
 
-### 0.01
+### 0.0.2
+
+Fix preview image
+
+### 0.0.1
 
 Ping permanetly and show internet status with response time.
